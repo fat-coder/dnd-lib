@@ -22,7 +22,7 @@ const weapon = [
   { name: 'lance', cost: 10, piercing: '1d12', weight: 6, reach: true, twohanded: true, martial: true, special: 'You have disadvantage when you use a lance to attack a target within 5 feet of you. A lance requires only one hand when you are mounted.' },
   { name: 'longsword', cost: 15, slashing: '1d8', weight: 3, versatile: '1d10', martial: true },
   { name: 'maul', cost: 10, bludgeoning: '2d6', weight: 10, heavy: true, twohanded: true, martial: true },
-  { name: 'morningstart', cost: 15, piercing: '1d8', weight: 4, martial: true },
+  { name: 'morningstar', cost: 15, piercing: '1d8', weight: 4, martial: true },
   { name: 'pike', cost: 5, piercing: '1d10', weight: 18, heavy: true, twohanded: true, martial: true },
   { name: 'rapier', cost: 25, piercing: '1d8', weight: 2, finesse: true, martial: true },
   { name: 'scimitar', cost: 25, slashing: '1d6', weight: 3, finesse: true, light: true, martial: true },

@@ -1,4 +1,4 @@
-const rollRegex = /(?<count>\d*)d(?<size>\d+)\+?(?<bonus>\d*)(?<ability>\w*)/i;
+const rollRegex = /(?<count>\d*)d(?<size>\d+)\+?(?<bonus>\d*)\+?(?<ability>\w*)/i;
 
 class Roll {
   constructor(value) {
@@ -36,7 +36,7 @@ class Roll {
 
   roll(stats) {
     if (!this.isValid)
-      return 0;
+      return Number.NaN;
 
     let result = 0;
     for (let i = 0; i < (this.count || 1); i++) {
@@ -47,6 +47,7 @@ class Roll {
     if (stats && stats[this.ability] && Number.isSafeInteger(stats[this.ability]))
       result += stats[this.ability];
 
+    // console.log(`${this} = ${result}`);
     return result;
   }
 }
